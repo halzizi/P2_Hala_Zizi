@@ -1,12 +1,71 @@
 body{
-    position: relative;
-}
-nav {
-    position: absolute;
-    top: 10px;
-    right: 10px;
 
 }
-nav ul {
-    list-style-type: none;
+
+header {
+    border: 2px solid black; 
+}
+
+img { 
+    display: none;
+}
+
+main{
+    border: 2px solid blue; 
+    margin: 10px;
+    display: flex;
+    width: 100%;
+    height: 1260px;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+/* hebergements a marseille */
+.hebergements {
+    border: 2px solid red; 
+    width: 60%;
+   
+
+}
+
+.hebergements .figures {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hebergements .figures figure {
+    width: 30%;
+    border: 2px solid orange;
+    height: 400px;
+    margin: 0;
+}
+
+.hebergements .figures .image { 
+    border: 2px solid black; 
+    height: 240px;
+
+}
+
+.hebergements .figures .image img { 
+
+}
+
+
+
+
+
+/* les plus populaires */
+aside {
+    border: 2px solid red; 
+    width: 30%;
+}
+
+.activites { 
+    border: 2px solid green; 
+}
+footer {
+    border: 2px solid orange; 
 }
