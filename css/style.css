@@ -25,8 +25,6 @@ main{
 .hebergements {
     border: 2px solid red; 
     width: 60%;
-   
-
 }
 
 .hebergements .figures {
@@ -36,7 +34,7 @@ main{
     justify-content: space-between;
 }
 
-.hebergements .figures figure {
+.hebergements .figures .figure {
     width: 30%;
     border: 2px solid orange;
     height: 400px;
@@ -46,14 +44,15 @@ main{
 .hebergements .figures .image { 
     border: 2px solid black; 
     height: 240px;
-
 }
 
-.hebergements .figures .image img { 
+/*
+.hebergements .figures .figure .image img { 
+} 
 
+.hebergements .figures .figure .etoile {
 }
-
-
+*/
 
 
 
@@ -63,9 +62,20 @@ aside {
     width: 30%;
 }
 
+.titre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: baseline;
+}
+.
+
+
 .activites { 
     border: 2px solid green; 
 }
+
 footer {
     border: 2px solid orange; 
 }
