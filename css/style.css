@@ -1,13 +1,62 @@
-body{
 
-}
 
 header {
-    border: 2px solid black; 
+    border: 2px solid black;
 }
 
+nav ul {
+    padding:0;
+    margin:0;
+    list-style-type:none;
+}
+
+nav ul li {
+    list-style-type: none;
+    outline: none;
+    margin-left:2px;
+    float:left; 
+    /* padding: 2px 0px 0px; */
+}
+
+nav ul li a {
+    display:block;
+    float:left;   
+    width:100px;
+    background-color:#6495ED;
+    color:black;
+    text-decoration:none;
+    outline: none;
+    text-align:center;
+    padding:5px;
+    border:2px solid;
+/*pour avoir un effet "outset" avec IE :*/
+    /* border-color:#DCDCDC #696969 #696969 #DCDCDC; */
+}
+nav ul li a:hover {
+    background-color:#D3D3D3;
+    border-color:#696969 #DCDCDC #DCDCDC #696969;
+}
+    
+.logoetnav {
+    display: flex;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoetnav .logo {
+    margin-left: 10px;
+}
+
+.logoetnav .navigateur {
+    display: flex;
+}
+
+
 img { 
-    display: none;
+    object-fit: scale-down;
 }
 
 main{
@@ -18,7 +67,7 @@ main{
     height: 1260px;
     flex-direction: row;
     justify-content: space-around;
-
+    object-fit: contain;
 }
 
 /* hebergements a marseille */
@@ -34,26 +83,37 @@ main{
     justify-content: space-between;
 }
 
-.hebergements .figures .figure {
+.hebergements .figures a {
     width: 30%;
+}
+
+.hebergements .figures a .figure {
+    width: 100%;
     border: 2px solid orange;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px grey;
     height: 400px;
     margin: 0;
 }
 
-.hebergements .figures .image { 
-    border: 2px solid black; 
+.hebergements .figures a .figure .image { 
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 100%; 
     height: 240px;
+    overflow: hidden;
+   
 }
 
-/*
 .hebergements .figures .figure .image img { 
+    /* display: none; */
+    width: 100%;
+    height: 233px;
 } 
 
 .hebergements .figures .figure .etoile {
+    color: #0065FC;
 }
-*/
-
 
 
 /* les plus populaires */
@@ -69,13 +129,24 @@ aside {
     flex-wrap: nowrap;
     align-items: baseline;
 }
-.
-
 
 .activites { 
     border: 2px solid green; 
 }
 
 footer {
-    border: 2px solid orange; 
+    border: 2px solid orange;
+
+}
+
+.footer {
+    background-color: #F2F2F2;
+}
+
+.orgfooter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
 }

@@ -16,13 +16,18 @@
 
 <body>
     <header> 
-        <img src="images/logo/Booki.png" alt="logo">
-        <nav>
-            <ul>
-                <li><a href="#"> Hébergements </a></li>
-                <li><a href="#"> Activités </a></li>
-             </ul> 
-        </nav>   
+        <div class="logoetnav">
+            <div class="logo">
+                <img src="images/logo/Booki.png" alt="logo">
+            </div>
+            <nav class="navigateur">
+                <ul>
+                    <li><a href="#hebergementsancre"> Hébergements </a></li>
+                    <li><a href="#activitesancre"> Activités </a></li>
+                </ul> 
+            </nav>
+        </div>
+    
 
         <section>
             <h2> Trouver votre hébergement pour des vacances de rêve </h2>
@@ -41,7 +46,7 @@
     
     <main>
         <section class="hebergements">
-            <h2>Hébergement à Marseille </h2>
+            <h2 id="hebergementsancre">Hébergement à Marseille </h2>
             <div class="figures">
                 <a href="#">
                     <figure class="figure">
@@ -171,7 +176,7 @@
                 <a href="#">
                     <figure class="figure">
                         <div class="image">
-                            <img src="images/hebergements/4_small/soleil.jpg" alt="Photo de chambre de l'hôtel le soleil du matin">
+                            <img src="" alt="Photo de chambre de l'hôtel le soleil du matin">
                         </div>
                         <figcaption>
                             <h3> Hôtel Le soleil du matin </h3>
@@ -190,7 +195,7 @@
                 <a href="#">    
                     <figure class="figure">
                         <div class="image">
-                            <img src="images/hebergements/4_small/hotes.jpg" alt="Photo de chambre">
+                            <img src="" alt="Photo de chambre">
                         </div>
                         <figcaption>
                             <h3> Au coeur de l'eau Chambres d'hôtes </h3>
@@ -209,7 +214,7 @@
                 <a href="">  
                     <figure class="figure">
                         <div class="image">
-                            <img src="images/hebergements/4_small/blanc.jpg" alt="blanc">
+                            <img src="" alt="blanc">
                         </div>
                         <figcaption>
                             <h3> Hôtel Tout bleu et BLanc </h3>
@@ -229,12 +234,12 @@
     </main>
 
     <section class="activites">
-        <H2> Activités à Marseille </H2>
-        <div>
+        <H2 id="activitesancre"> Activités à Marseille </H2>
+        <div class="figuresactivites">
             <a href="#">
-                <figure>
-                    <div>
-                        <img src="" alt="Photo du Vieux Port">
+                <figure class="figactivites">
+                    <div class="imgactivites">
+                        <img src="images/hebergements/4_small/port.jpg" alt="Photo du Vieux Port">
                     </div>
                     <figcaption>
                         <h3> Vieux Port </h3>
@@ -243,9 +248,9 @@
             </a>     
 
             <a href="#">
-                <figure>
-                    <div>
-                        <img src="" alt="Photo du Fort de Pomègues">
+                <figure class="figactivites">
+                    <div class="imgactivites">
+                        <img src="images/hebergements/4_small/" alt="Photo du Fort de Pomègues">
                     </div>
                     <figcaption>
                         <h3> Fort de Pomègues </h3>
@@ -254,8 +259,8 @@
             </a>
             
             <a href="#">
-                <figure>
-                    <div>
+                <figure class="figactivites">
+                    <div class="imgactivites">
                         <img src="" alt="Photo des Îles du Frioul">
                     </div>
                     <figcaption>
@@ -264,8 +269,8 @@
                 </figure>
             </a>       
             <a href="#">
-                <figure>
-                    <div>
+                <figure class="figactivites">
+                    <div class="imgactivites">
                         <img src="" alt="Photo du Parc National des Calanques">
                     </div>
                     <figcaption>
@@ -275,8 +280,8 @@
             </a>
 
             <a href="#">
-                <figure>
-                    <div>
+                <figure class="figactivites">
+                    <div class="imgactivites">
                         <img src="" alt="Photo de Notre-Dame-de-la-Garde">
                     </div>
                     <figcaption>
@@ -286,8 +291,8 @@
             </a>
 
             <a href="#">
-                <figure>
-                    <div>
+                <figure class="figactivites">
+                    <div class="imgactivites">
                         <img src="" alt="Photo du Parc Longchamp">
                     </div>
                     <figcaption>
@@ -299,25 +304,23 @@
     </section>
 
     <footer class="footer">
-        <div>
-            <ul> <h3> A propos </h3>
+        <div class="orgfooter">
+            <ul class="apropos"> <h3> A propos </h3>
                 <li><a href="#"> Fonctionnement du site</a></li>
                 <li><a href="#"> Conditions générale de vente </a></li>
                 <li><a href="#"> Données et confidentialité </a></li>
             </ul> 
 
-            <ul> <h3> Nos hébergements </h3>
+            <ul class="qualite"> <h3> Nos hébergements </h3>
                 <li><a href="#"> Charte qualité </a></li>
                 <li><a href="#"> Soumettre votre hôtel </a></li>
             </ul>
                 
-            <ul> <h3> Assistance </h3>
+            <ul class="assistance"> <h3> Assistance </h3>
                 <li><a href="#"> Centre d'aide </a></li>
                 <li><a href="#"> Nous contacter </a></li>
             </ul>
         </div>
-        
-
     </footer>
 </body>
 
