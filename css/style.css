@@ -12,6 +12,7 @@ body {
 
 header {
     border: 2px solid black;
+    margin: 10px;
 }
 
 /* Logo et menu nav */
@@ -68,27 +69,59 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 400px;
-    border: 2px solid black;
-    border-radius: 10px;
+    align-items: center;
+    width: 30%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    /* border: 2px solid black;
+    border-radius: 10px; */
 }
 
 .recherche .barre .iconmap {
-    height: 50px;
-    width: 50px;
-} 
+    background-color: #F2F2F2;
+    border-radius: 10px 0 0 10px;
+    border: 2px solid #F2F2F2;
+    padding: 10px;
+    /* color: #0065FC; */
+}
 
 .recherche .barre .input {
-    height: 50px;
-    width: 230px;
-    font-size: 18px;
+    height: 100%;
+    width: 100%;
+    size: 20px;
+    /* width: 60%; */
+}
+
+.recherche .barre .input [type="search"] {
+    border: 2px solid #F2F2F2;
+    /* height: inherit;
+    width: inherit; */
+    padding: 10px;
+
+}
+
+.recherche .barre .input ::placeholder {
     color: black;
     font-weight: bold;
+    width: 100%;
+    height: 100%;
 }
+
 .recherche .barre .bouttonrecherche {
-    height: 50px;
-    width: 120px;
+    width: 30%;
 }
+
+.recherche .barre .bouttonrecherche button {
+    /* height: 100%; */
+    width: 100%;
+    background-color: #0065FC;
+    border-radius: 0 10px 10px 0;
+    border-color: #F2F2F2;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
 /* FLitres */
 
 .filtres {
@@ -98,7 +131,13 @@ header {
     flex-wrap: nowrap;
     align-content: center;
     justify-content: flex-start;
+    margin-bottom: 10px;
     /* width: 100%; */
+}
+
+.filtres .description p { 
+    color: black;
+    font-weight: bold;
 }
 
 .filtres .icons {
@@ -111,19 +150,31 @@ header {
 }
 
 .filtres .icons .iconfiltre {
-    border: 2px solid black;
-    border-radius: 10px;
+    border: 2px solid;
+    border-radius: 50px;
     border-color: #F2F2F2;
-    border-style: inset;
+    /* border-style: inset; */
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: center;
+    /* align-items: stretch; */
+    
+    
 }
 
 .filtres .icons .iconfiltre i {
     border: 2px solid red;
-    border-radius: 10px;
+    border-radius: 50px;
+    background-color: #deebff;
+    color: #0065FC;
+    padding: 10px;
+    align-self: center;
+    
+}
+
+.filtres .icons .iconfiltre p { 
+    font-weight: bold;
+    padding: 10px;
 }
 
 /* Main */
@@ -275,12 +326,13 @@ main{
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-around;
+    width: 50%;
 }
 
 .pluspopulaires .figurespopulaires a .figurepop .image {
     /* border: 2px solid black; */
     border-radius: 20px 0 0 20px;
-    width: 100%; 
+    width: 50%; 
     height: 260px;
     overflow: hidden;
 }
