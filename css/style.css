@@ -1,19 +1,19 @@
-/* @font-face {
+@font-face {
     font-family: raleway;
     src: url(static/Raleway-Regular.ttf);
-
-} */
+}
 
 body {
     text-decoration-color: black;
     font-family: raleway;
+    width: 1440px;
 }
-
 
 header {
-    border: 2px solid black;
     margin: 10px;
+    padding-left: 30px;
 }
+
 
 /* Logo et menu nav */
 
@@ -23,29 +23,54 @@ header {
     flex-wrap: nowrap;
     flex-direction: row-reverse;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center
+}
+
+.logoetnav .navigateur {
+    width: 300px;
 }
 
 .logoetnav .navigateur ul {
     display: flex;
-    list-style-type:none;
-    border: 2px solid;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    list-style-type: none;
     height: 100px;
+    margin: 0;
+    padding: 0;
 }
 
 .logoetnav .navigateur ul li {
     list-style-type: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 150px;
+    justify-content: space-around;
+    align-content: space-around;
 }
 
 .logoetnav .navigateur ul li a {
-    width:100px;
-    background-color: gray;
     color:black;
     text-decoration:none;
     outline: none;
     text-align: center;
-    padding:10px;
-    border:2px solid;
+    font-size: larger;
+    width: 100%;
+}
+
+.logoetnav .navigateur ul li:hover {
+    border-top:2px solid #0065FC;
+}
+
+.logoetnav .navigateur ul li a:hover {
+    color:#0065FC;
+}
+
+.logoetnav .logo img {
+
 }
 
 /* Barre de Recherche */
@@ -82,7 +107,7 @@ header {
     /* height: inherit;
     width: inherit; */
     padding: 10px;
-
+    width: 100%;
 }
 
 .recherche .barre .input ::placeholder {
@@ -118,6 +143,7 @@ header {
     justify-content: flex-start;
     margin-bottom: 10px;
     /* width: 100%; */
+    height: 50px;
 }
 
 .filtres .description span { 
@@ -134,6 +160,40 @@ header {
     width: 70%;
 }
 
+
+/*  */
+
+.filtres .icons .iconfiltres {
+    border: 2px solid;
+    border-radius: 50px;
+    border-color: #F2F2F2;
+    /* border-style: inset; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* align-items: stretch; */
+}
+
+filtres .icons .iconfiltres .iconseul i {
+    /* border: 2px solid red; */
+    border-radius: 50px;
+    background-color: #deebff;
+    color: #0065FC;
+    padding: 10px;
+    align-self: center; 
+}
+
+.filtres .icons .iconfiltres .eco { 
+    font-weight: bold;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+
+/*  */
+
+
+
 .filtres .icons .iconfiltre {
     border: 2px solid;
     border-radius: 50px;
@@ -143,17 +203,15 @@ header {
     flex-direction: row;
     flex-wrap: nowrap;
     /* align-items: stretch; */
-    
 }
 
 .filtres .icons .iconfiltre i {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     border-radius: 50px;
     background-color: #deebff;
     color: #0065FC;
     padding: 10px;
-    align-self: center;
-    
+    align-self: center; 
 }
 
 .filtres .icons .iconfiltre span { 
@@ -165,49 +223,55 @@ header {
 /* Main */
 
 main{
-    border: 2px solid blue; 
-    margin: 10px;
     display: flex;
-    /* width: 100%; */
-    height: 1260px;
+    width: 100%;
+    height: 630px;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-around;
     align-content: space-between;
     align-items: center;
     object-fit: contain;
-    /* border-radius: 20px; */
 }
 
 /* Hebergements a marseille */
 
 .hebergements {
     display: flex;
-    /* border: 2px solid red;  */
     width: 60%;
+    height: 100%;
     background-color: #F2F2F2;
     border-radius: 20px;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .hebergements h2 {
-    padding-left: 15px;
+    padding-left: 30px;
+}
 
+.hebergements .afficher {
+    padding-left: 30px;
 }
 
 .hebergements .figures {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 430px;
+    /* padding-left: 30px;
+    padding-right: 30px; */
 }
 
 .hebergements .figures a {
     width: 30%;
-    height: 400px;
+    height: 200px;
     text-decoration: none;
     color: black;
     display: flex;
@@ -216,7 +280,7 @@ main{
 
 .hebergements .figures a .figure {
     width: 100%;
-    /* border: 2px solid orange; */
+    height: 200px;
     border-radius: 20px;
     box-shadow: 4px 4px 10px grey;
     margin: 0;
@@ -224,24 +288,15 @@ main{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    padding: 5px;
 }
 
 .hebergements .figures a .figure .image { 
     border-radius: 20px 20px 0 0;
-    height: 230px;
-    /* padding: 5px; */
-
-    /* background-clip: padding-box; */
-    /* border: 2px solid black; */
-    /*  Pour centrer l'image dans la boite 
-    border-style: hidden;*/
-    /* width: 100%;  */
-    /* overflow: hidden; */
+    height: 120px;
+    padding: 5px;
 }
 
 .hebergements .figures .figure .image img { 
-    /* display: none; */
     max-width: 100%;
     max-height: 100%;
     min-height: 100%;
@@ -250,25 +305,59 @@ main{
     border-radius: 20px 20px 0 0;
 } 
 
+.hebergements .figures .figure figcaption {
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-left: 15px;
+}
+
+.hebergements .figures .figure figcaption h3 {
+    margin: 0;
+}
+
 .hebergements .figures .figure .etoile {
     color: #0065FC;
 }
 
+.hebergements .figures .figure .etoile .fa-star {
+    font-size: 12px;
+}
+
+
+
 /* Plus populaires */
 
 .pluspopulaires {
-    /* border: 2px solid red;  */
+    height: 100%;
     width: 30%;
     background-color: #F2F2F2;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 .pluspopulaires .titre {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: nowrap;
-    align-items: baseline;
+    align-items: flex-end;
+    height: 80px;
+    width: 80%;
+}
+
+.pluspopulaires .titre h2 {
+    margin: 0;
+}
+
+.pluspopulaires .titre i {
+    font-size: x-large;
+    margin: 0;
 }
 
 .pluspopulaires .figurespopulaires {
@@ -277,14 +366,15 @@ main{
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
-    /* height: 100%; */
+    align-content: space-between;
+    height: 540px;
 }
 
 .pluspopulaires .figurespopulaires a {
     text-decoration: none;
     color: black;
-    width: 90%;    /*  a verifier */
-    height: 290px;
+    width: 80%;
+    height: 145px;
     display: flex;
     align-items: center;
 }
@@ -294,30 +384,18 @@ main{
     flex-direction: row;
     flex-wrap: nowrap;
     width: 100%;
+    height: 145px;
     border-radius: 20px 20px 20px;
     box-shadow: 4px 4px 10px grey;
     background-color: white;
-    padding: 5px;
-    margin: 5px;
-    /* margin: O; */
-    /* align-items: flex-start; */
-    /* border: 2px solid gray; */
-   
-}
-.pluspopulaires .figurespopulaires a .figurepop figcaption {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    width: 50%;
+    margin: 0;
 }
 
 .pluspopulaires .figurespopulaires a .figurepop .image {
-    /* border: 2px solid black; */
     border-radius: 20px 0 0 20px;
-    width: 50%; 
-    height: 260px;
+    width: 40%; 
     overflow: hidden;
+    padding: 5px;
 }
 
 .pluspopulaires .figurespopulaires a .figurepop .image img {
@@ -329,9 +407,33 @@ main{
     border-radius: 20px 0 0 20px;
 }
 
+.pluspopulaires .figurespopulaires a .figurepop figcaption {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 50%;
+    padding-left: 15px;
+}
+.pluspopulaires .figurespopulaires a .figurepop figcaption .desc {
+    height: 80px;
+    display: flex;
+    align-content: space-around;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around
+}
+
+.pluspopulaires .figurespopulaires a .figurepop figcaption .desc h3 {
+    margin: 0;
+}
 
 .pluspopulaires .figurespopulaires a .figurepop .figaside .etoile {
     color: #0065FC;
+}
+
+.pluspopulaires .figurespopulaires a .figurepop .figaside .etoile i {
+    font-size: 12px;
 }
 
 .hebergements .afficher {
@@ -348,12 +450,14 @@ main{
 .activites {
     display: flex;
     flex-direction: column;
-    /* border: 2px solid red; */
+}
+
+.activites h2 {
+    padding-left: 30px;
 }
 
 .activites .figuresactivites {
-    height: 900px;
-    /* border: 2px solid black; */
+    height: 450px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowraps;
@@ -363,9 +467,8 @@ main{
 }
 
 .activites .figuresactivites .column {
-    /* border: 2px solid green; */
     width: 22%;
-    height: 895px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -373,7 +476,6 @@ main{
 }
 
 .activites .figuresactivites .column a {
-    /* border: 2px solid blue; */
     text-decoration: none;
     color: black;
     height: 100%;
@@ -389,16 +491,12 @@ main{
     border-radius: 20px;
     box-shadow: 4px 4px 10px grey;
     margin: 0;
-    /* display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap; */
 }
 
 .activites .figactivites .column a .figactivites .image{
     border: 2px solid blueviolet;
     border-radius: 20px 20px 0px 0px;
     overflow: hidden;
-    
 }
 
 .activites .figactivites .column a .figactivites .image img {
@@ -414,22 +512,22 @@ main{
 .activites .figuresactivites .column .figactivites figcaption {
     /* border: 2px solid saddlebrown; */
     border-radius: 0 0 20px 20px;
-    height: 115px;
+    height: 55px;
     justify-items: center;
 }
 
 /* Port et Parc */
 
 .activites .figuresactivites .columnlong {
-    height: 895px;
+    height: 450px;
 }
 
 .activites .figuresactivites .columnlong a .figactivites {
-    height: 895px
+    height: 450px
 }
 
 .activites .figuresactivites .columnlong a .figactivites .image {
-    height: 780px;
+    height: 390px;
 }
 
 .activites .figuresactivites .columnlong a .figactivites .image img {
@@ -445,15 +543,15 @@ main{
 /* Pomegues */
 
 .activites .figuresactivites .column .pomegues {
-    height: 420px;
+    height: 210px;
 }
 
 .activites .figuresactivites .column .pomegues a .grand {
-    height: 420px;
+    height: 210px;
 }
 
 .activites .figuresactivites .column .pomegues a .grand .image {
-    height: 305px
+    height: 155px
 }
 
 .activites .figuresactivites .column .pomegues a .grand .image img { 
@@ -469,15 +567,15 @@ main{
 /* Frioul */
 
 .activites .figuresactivites .column .frioul {
-    height: 395px;
+    height: 195px;
 }
 
 .activites .figuresactivites .column .frioul a .petit {
-    height: 395px;
+    height: 195px;
 }
 
 .activites .figuresactivites .column .frioul a .petit .image {
-    height: 280px;
+    height: 140px;
 }
 
 .activites .figuresactivites .column .frioul a .petit .image img {
@@ -493,15 +591,15 @@ main{
 /* Dame */
 
 .activites .figuresactivites .column .dame {
-    height: 395px;
+    height: 195px;
 }
 
 .activites .figuresactivites .column .dame a .petit {
-    height: 395px;
+    height: 195px;
 }
 
 .activites .figuresactivites .column .dame a .petit .image {
-    height: 280px;
+    height: 140px;
 }
 
 .activites .figuresactivites .column .dame a .petit .image img {
@@ -517,15 +615,15 @@ main{
 /* Longchamp */
 
 .activites .figuresactivites .column .longchamp {
-    height: 420px;
+    height: 210px;
 }
 
 .activites .figuresactivites .column .longchamp a .grand {
-    height: 420px;
+    height: 210px;
 }
 
 .activites .figuresactivites .column .longchamp a .grand .image {
-    height: 305px
+    height: 155px
 }
 
 .activites .figuresactivites .column .longchamp a .grand .image img { 
@@ -558,9 +656,17 @@ footer {
 .footer .orgfooter ul {
     list-style-type: none;
     padding-inline-start: 0px;
+    max-width: 1280px;
 }
 
 .footer .orgfooter ul li a {
     text-decoration: none;
     list-style-type: none;
+}
+
+@media screen and (max-width: 870px) {
+    main {
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+    }
 }
