@@ -25,17 +25,16 @@
             </nav>
             
             <div class="logo">
-                <img src="images/logo/Bookiminib.png" alt="logo"> 
+                <img src="images/logo/Booki.png" alt="logo"> 
             </div>
-            
         </div>
 
         <section class="recherche">
-            <div>
-                <h2> Trouver votre hébergement pour des vacances de rêve </h2>
-                <span>En plein centre ville ou en plein nature</span>
+            <div class="titre">
+                <h2> Trouver votre hébergement pour des vacances de rêve </h2><br>
+                <span>En plein centre ville ou en pleine nature</span>
             </div>
-
+            
             <div class="barre">
                 <div class="iconmap">
                     <i class="fas fa-map-marker-alt"></i> 
@@ -46,51 +45,80 @@
                 <div class="bouttonrecherche">
                     <button> Rechercher </button>
                 </div>
+                <div class="louperecherche">
+                    <i class="fas fa-search"></i>
+                </div>
             </div>
         </section>
-    
-        <section>
+
+        <section class="filtresetinfo">
             <div class="filtres">
                 <div class="description"> 
                     <span> Filtres </span>
                 </div>
 
                 <div class="icons"> 
-                    <div class="iconfiltres">
-                        <div class="iconseul">
-                            <i class="fas fa-money-bill-wave"> </i>
-                        </div>     
-                        <span class="eco"> Economique </span>
-                    </div> 
                     <div class="iconfiltre">
-                        <i class="fas fa-child"></i>
-                        <span> Famillial </span>
+                        <div class="icon">
+                           <button>
+                               <i class="fas fa-money-bill-wave"> </i>
+                            </button>
+                        </div>
+                        <div class="categorie">
+                            <span> Economique </span>
+                        </div>
                     </div>
+
                     <div class="iconfiltre">
-                        <i class="fas fa-heart"></i> 
-                        <span> Romantique </span>
+                        <div class="icon">
+                            <button><i class="fas fa-child"></i></button>
+                        </div>
+                        <div class="categorie">
+                            <span> Famillial </span>
+                        </div>
                     </div>
+
                     <div class="iconfiltre">
-                        <i class="fas fa-dog"></i> 
-                        <span> Animaux autorisés </span>
+                        <div class="icon">
+                            <button>
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="categorie">
+                            <span> Romantique </span>
+                        </div>
+                    </div>
+
+                    <div class="iconfiltre">
+                        <div class="icon">
+                            <button>
+                                <i class="fas fa-dog"></i>
+                            </button>
+                        </div>
+                        <div class="categorie">
+                            <span> Animaux autorisés </span>
+                        </div>
                     </div>
                 </div>
-        </section>
-
-        <section>
+            </div> 
+            
             <div class="info">
                 <div class="iconinfo">
-                    <i class="fa-regular fa-circle-info"></i>
+                    <i class="fas fa-info"></i>
                 </div>
-                <span> Plus de 500 logements sont disponibles dans cette ville</span>
+                <div class="plus">
+                    <span> Plus de 500 logements sont disponibles dans cette ville</span>
+                </div>
             </div>
-        </section>
 
+        </section>
     </header>
     
     <main>
         <section class="hebergements">
-            <h2 id="hebergementsancre">Hébergement à Marseille </h2></div>
+            <div class="titre">
+                <h2 id="hebergementsancre">Hébergement à Marseille </h2>
+            </div>
             <div class="figures">
                 <a href="#">
                     <figure class="figure">
@@ -372,22 +400,30 @@
     </section>
 
     <footer class="footer">
-        <div class="orgfooter">
-            <ul class="apropos"> <h3> A propos </h3>
-                <li><a href="#"> Fonctionnement du site</a></li>
-                <li><a href="#"> Conditions générale de vente </a></li>
-                <li><a href="#"> Données et confidentialité </a></li>
-            </ul> 
+        <div class="background">
+            <div class="list apropos">
+                <h3> A propos </h3>
+                <ul> 
+                    <li><a href="#"> Fonctionnement du site</a></li>
+                    <li><a href="#"> Conditions générale de vente </a></li>                    <li><a href="#"> Données et confidentialité </a></li>
+                </ul>
+            </div>    
 
-            <ul class="qualite"> <h3> Nos hébergements </h3>
-                <li><a href="#"> Charte qualité </a></li>
-                <li><a href="#"> Soumettre votre hôtel </a></li>
-            </ul>
-                
-            <ul class="assistance"> <h3> Assistance </h3>
-                <li><a href="#"> Centre d'aide </a></li>
-                <li><a href="#"> Nous contacter </a></li>
-            </ul>
+            <div class="list qualite">
+                <h3> Nos hébergements </h3>
+                <ul> 
+                    <li><a href="#"> Charte qualité </a></li>
+                    <li><a href="#"> Soumettre votre hôtel </a></li>
+                </ul>
+            </div>
+            
+            <div class="list assistance">
+                <h3> Assistance </h3>    
+                <ul> 
+                    <li><a href="#"> Centre d'aide </a></li>
+                    <li><a href="#"> Nous contacter </a></li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
