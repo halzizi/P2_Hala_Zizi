@@ -163,8 +163,9 @@ header .titre span {
 .recherche .barre form .inputrechercher .input1 {
     height: 50px;
     cursor: pointer;
-    padding: 0 10px 0 10px;
+    padding: 0 0 0 10px;
     border: none;
+    width: 100%;
 }
 
 .recherche .barre form .inputrechercher ::placeholder {
@@ -186,21 +187,16 @@ header .titre span {
     cursor: pointer;
     border: none;
     border-radius: 0px 10px 10px 0px;
+    justify-content: space-around;
+    padding: 0;
+    width: 50%;
+    margin-top: -0.5px;
 }
+
 
 .recherche .barre form .inputboutton :hover{
     transform: scale(1.1);
 }
-
-/* .recherche .barre form .inputboutton .input2 {
-    height: 51px;
-    color: white;
-    font-weight: bolder;
-    background-color: #0065fc;
-    cursor: pointer;
-    border: none;
-    border-radius: 0px 10px 10px 0px;
-} */
 
 .recherche .barre form .louperecherche {
     display: none;
@@ -229,7 +225,6 @@ header .titre span {
     width: 91%;
     cursor: pointer;
 }
-
 
 .filtressection .filtres .icons .iconfiltre {
     border: 2px solid;
@@ -277,11 +272,13 @@ header .titre span {
     align-content: space-around;
 }
 
-.filtressection .filtres .icons .iconfiltre .categorie h3 { 
+.filtressection .filtres .icons .iconfiltre .categorie span { 
     font-weight: bold;
     margin-left: 10px;
     margin-right: 10px;
 }
+
+
 
 /* info */
 
@@ -405,6 +402,7 @@ main{
 
 .hebergements .figures .figure figcaption h3 {
     margin: 0;
+    font-size: medium;
 }
 
 .hebergements .figures .figure figcaption span {
@@ -794,7 +792,6 @@ main{
 
 
 
-
 @media screen and (max-width: 768px) {
     body {
         width: auto; 
@@ -858,7 +855,7 @@ main{
 /* TITRE */
 
     header .titre {
-        padding: 40px 40px 0 20px;
+        padding: 40px 0 0 20px;
         
     }
 
@@ -929,6 +926,7 @@ main{
         width: fit-content;
         margin-right: 15px;
         height: 50px;
+        margin-bottom: 10px;
     }
     
     .info {
@@ -1106,4 +1104,74 @@ main{
     .footer .list ul {
         margin: 0;
     }
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+   
+    /* Barre de Recherche */
+
+    .recherche .barre {
+        width: 95%;
+    }
+
+    .recherche .barre form .inputboutton {
+        width: 30%;
+        justify-content: space-between;
+    }
+
+    .recherche .barre form .inputboutton span {
+        padding-left: 35px;
+    }
+
+    /* Filtres  */
+
+    .filtressection .filtres {
+        width: auto;
+        margin: 30px 20px 35px 0;
+        box-sizing: border-box;
+    }
+
+    .filtressection .filtres .icons .iconfiltre .categorie span {
+        font-size: smaller;
+    }
+
+    /* Main */
+
+    main {
+        height: auto;
+        flex-direction: column;
+    }
+
+    /* Hébergements */
+
+    .hebergements {
+        width: auto;
+    }
+
+    /* Plus populaires  */
+    .pluspopulaires .figurespopulaires a .figurepop figcaption .desc h3 {
+        margin: unset;
+        font-size: large;
+    }
+
+    .pluspopulaires {
+        width: 100%;
+        margin-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .pluspopulaires .titre {
+        width: 90%;
+    }
+
+    .pluspopulaires .figurespopulaires {
+        flex-direction: column;
+    }
+
+    .pluspopulaires .figurespopulaires a .figurepop {
+        height: 160px;
+    }
+    
 }
