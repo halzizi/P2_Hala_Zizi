@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" type="image/png" href="images/logo/Booki.png" />
-    <script src="https://kit.fontawesome.com/7d8ada606a.js"; crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7d8ada606a.js" crossorigin="anonymous"></script>
     <title>Booki</title>
 </head>
 
@@ -32,30 +32,35 @@
             <span>En plein centre ville ou en pleine nature</span>
         </section>
 
-        <section class="recherche">    
+        <div class="recherche">    
             <div class="barre">
                 <div class="iconmap">
                     <i class="fas fa-map-marker-alt"></i> 
                 </div>
 
                 <form action="recherche" method="post" class="form">
-                    <label for="recherche"></label>
                     <div class="inputrechercher">
                         <input class="input1" type="text" name="barre de recherche" placeholder="Marseille, France" />
                     </div>
-                    <div class="inputboutton">
+                    <!-- <div class="inputboutton">
                         <input class="input2" type="submit" value="Rechercher" />
                     </div>
+                    <div class="louperecherche"><i class="fas fa-search"></i></div> -->
+                    <button class="inputboutton"> 
+                        <p class="input2"> 
+                            Rechercher
+                        </p> 
+                        <i class="fas fa-search louperecherche"></i> 
+                    </button>
 
-                    <div class="louperecherche"><i class="fas fa-search"></i></div>
                 </form>
             </div>
-        </section>
+        </div>
 
         <section class="filtressection">
             <div class="filtres">
                 <div class="description"> 
-                    <span> Filtres </span>
+                    <h3> Filtres </h3>
                 </div>
 
                 <div class="icons"> 

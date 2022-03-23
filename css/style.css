@@ -179,13 +179,6 @@ header .titre span {
     height: 100%;
     align-items: center;
     display: flex;
-}
-
-.recherche .barre form .inputboutton :hover{
-    transform: scale(1.1);
-}
-
-.recherche .barre form .inputboutton .input2 {
     height: 51px;
     color: white;
     font-weight: bolder;
@@ -194,6 +187,20 @@ header .titre span {
     border: none;
     border-radius: 0px 10px 10px 0px;
 }
+
+.recherche .barre form .inputboutton :hover{
+    transform: scale(1.1);
+}
+
+/* .recherche .barre form .inputboutton .input2 {
+    height: 51px;
+    color: white;
+    font-weight: bolder;
+    background-color: #0065fc;
+    cursor: pointer;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+} */
 
 .recherche .barre form .louperecherche {
     display: none;
@@ -270,7 +277,7 @@ header .titre span {
     align-content: space-around;
 }
 
-.filtressection .filtres .icons .iconfiltre .categorie span { 
+.filtressection .filtres .icons .iconfiltre .categorie h3 { 
     font-weight: bold;
     margin-left: 10px;
     margin-right: 10px;
@@ -319,6 +326,7 @@ main{
     align-items: center;
     object-fit: contain;
     padding: 0 30PX 0 30px;
+    box-sizing: border-box;
 }
 
 /* Hebergements a marseille */
@@ -430,6 +438,7 @@ main{
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .pluspopulaires .titre {
@@ -460,6 +469,7 @@ main{
     align-items: center;
     align-content: space-between;
     height: 540px;
+    width: 100%;
 }
 
 .pluspopulaires .figurespopulaires a {
@@ -785,9 +795,7 @@ main{
 
 
 
-@media screen and (max-width: 870px) {
-
-
+@media screen and (max-width: 768px) {
     body {
         width: auto; 
     }
@@ -901,9 +909,12 @@ main{
         flex-direction: column;
         height: auto;
         width: auto;
-        height: 225px;
         align-items: normal;
         margin: 40px 0 35px 0;
+    }
+
+    .filtressection .filtres .description {
+        padding: 10px 0 10px 0;
     }
 
     .filtressection .filtres .icons {
@@ -912,7 +923,6 @@ main{
         justify-content: flex-start;
         align-items: normal;
         width: auto;
-        height: 190px;
     }
 
     .filtressection .filtres .icons .iconfiltre {
@@ -922,7 +932,6 @@ main{
     }
     
     .info {
-        height: 4Opx;
         align-items: flex-start;
         margin-bottom: 40px;
         padding: 0 20px 0 20px;
@@ -969,7 +978,7 @@ main{
 
     .pluspopulaires {
         height: 620px;
-        width: auto;
+        width: 100%;
         border-radius: unset;
         justify-content: space-evenly;
         padding: 0 20px 0 20px;
