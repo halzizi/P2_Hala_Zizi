@@ -7,8 +7,6 @@
 body {
     text-decoration-color: black;
     font-family: raleway;
-    max-width: 1440px;
-    /* width: 1440px; */
 }
 
 header {
@@ -1108,7 +1106,7 @@ main{
 
 
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
    
     /* Barre de Recherche */
 
@@ -1151,6 +1149,7 @@ main{
     }
 
     /* Plus populaires  */
+
     .pluspopulaires .figurespopulaires a .figurepop figcaption .desc h3 {
         margin: unset;
         font-size: large;
